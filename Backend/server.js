@@ -7,7 +7,7 @@ const checklistRoutes = require('./routes/checklistRoutes');
 
 app.use(express.json());
 
-app.use('/api/affirmations', affirmationsRoutes);
+app.use('/api/affirmations', affirmationsRoutes );
 app.use('/api/goals', goalsRoutes);
 app.use('/api/reflections', reflectionsRoutes);
 app.use('/api/checklist', checklistRoutes);

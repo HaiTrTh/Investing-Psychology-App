@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRandomAffirmation } = require('../controllers/affirmationsController');
+const { getRandomAffirmation } = require('../Controllers/affirmationsController');
 
 router.get('/', getRandomAffirmation);
 
