@@ -2,8 +2,6 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-
-
  const affirmationsRoutes = require('./routes/affirmationsRoutes');
  app.use('/api/affirmations', affirmationsRoutes );
 
@@ -13,8 +11,8 @@ app.use(express.json());
 //  const checklistRoutes = require('./routes/checklistRoutes');
 //  app.use('/api/checklist', checklistRoutes);
 
-//  const goalsRoutes = require('./routes/goalsRoutes');
-//  app.use('/api/goals', goalsRoutes);
+ const goalsRoutes = require('./routes/goalsRoutes');
+ app.use('/api/goals', goalsRoutes);
  
 
 const PORT = process.env.PORT || 5000;
